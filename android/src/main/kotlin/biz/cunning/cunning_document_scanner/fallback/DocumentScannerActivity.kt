@@ -242,7 +242,8 @@ class DocumentScannerActivity : AppCompatActivity() {
      */
     private fun openCamera() {
         document = null
-        cameraUtil.openCamera(documents.size)
+//        cameraUtil.openCamera(documents.size)
+        startActivity(Intent(this, CameraCaptureActivity::class.java))
     }
 
     /**
